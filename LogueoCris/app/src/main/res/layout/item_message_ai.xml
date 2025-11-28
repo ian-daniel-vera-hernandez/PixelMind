@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="4dp">
+
+    <TextView
+        android:id="@+id/ai_message_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/message_ai_background"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="10dp"
+        android:maxWidth="280dp" app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Texto de ejemplo" /> <LinearLayout
+    android:id="@+id/ai_action_buttons_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="8dp"
+    app:layout_constraintStart_toStartOf="@+id/ai_message_text"
+    app:layout_constraintTop_toBottomOf="@+id/ai_message_text">
+
+    <ImageButton
+        android:id="@+id/thumb_up_button"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_like" android:scaleType="fitCenter" android:padding="3dp" android:layout_marginEnd="8dp"
+        android:contentDescription="Me gusta" />
+
+    <ImageButton
+        android:id="@+id/thumb_down_button"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_dislike" android:scaleType="fitCenter" android:padding="3dp" android:layout_marginEnd="8dp"
+        android:contentDescription="No me gusta" />
+
+    <ImageButton
+        android:id="@+id/share_button"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_copiar" android:scaleType="fitCenter" android:padding="3dp" android:layout_marginEnd="8dp"
+        android:contentDescription="Compartir" />
+
+    <ImageButton
+        android:id="@+id/retry_button"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_generar" android:scaleType="fitCenter" android:padding="3dp" android:contentDescription="Reintentar" />
+
+</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

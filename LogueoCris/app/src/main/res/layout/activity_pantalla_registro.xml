@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondori"
+    android:fillViewport="true"
+    tools:context=".ZpantallaRegistro">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="32dp"
+        android:paddingTop="40dp"
+        android:paddingRight="32dp"
+        android:paddingBottom="40dp">
+
+        <TextView
+            android:id="@+id/txtreg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="@font/pixel"
+            android:gravity="center"
+            android:text="Regístrate"
+            android:textColor="#FFFFFF"
+            android:textSize="45sp" />
+
+        <TextView
+            android:id="@+id/txtus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/pixel"
+            android:text="Usuario"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edtxtus"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:background="#0073A5"
+            android:fontFamily="@font/pixel"
+            android:hint="Ingresar datos"
+            android:inputType="text"
+            android:paddingHorizontal="10dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#CCCCCC" />
+
+        <TextView
+            android:id="@+id/txtnombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/pixel"
+            android:text="Nombre Completo"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edtxtnombre"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:background="#0073A5"
+            android:fontFamily="@font/pixel"
+            android:hint="Ingresar datos"
+            android:inputType="textPersonName"
+            android:paddingHorizontal="10dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#CCCCCC" />
+
+        <TextView
+            android:id="@+id/txtpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/pixel"
+            android:text="Correo"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edtxtmail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="30dp"
+            android:background="#0073A5"
+            android:fontFamily="@font/pixel"
+            android:hint="Ingresar datos"
+            android:inputType="textEmailAddress"
+            android:paddingHorizontal="10dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#CCCCCC" />
+
+        <Button
+            android:id="@+id/btnreg"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/boton"
+            android:fontFamily="@font/pixel"
+            android:text="Registrarme"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            app:backgroundTint="@null" />
+
+        <TextView
+            android:id="@+id/txtpreg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/pixel"
+            android:text="¿Ya tienes una cuenta?"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnini"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/boton"
+            android:fontFamily="@font/pixel"
+            android:text="Inicia Sesión"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            app:backgroundTint="@null" />
+
+    </LinearLayout>
+</ScrollView>

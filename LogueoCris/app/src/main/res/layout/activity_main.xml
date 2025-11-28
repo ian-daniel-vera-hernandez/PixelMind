@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondori">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="32dp">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="200dp"
+                android:layout_height="170dp"
+                android:layout_marginTop="32dp"
+                android:src="@drawable/fondof"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/pixel"
+                android:text="Bienvenido"
+                android:textColor="#FFFFFF"
+                android:textSize="50sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+            <TextView
+                android:id="@+id/tvUsuario"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/pixel"
+                android:text="Usuario"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="@+id/edTUsuario"
+                app:layout_constraintStart_toStartOf="@+id/edTUsuario"
+                app:layout_constraintTop_toBottomOf="@+id/tvLogin" />
+
+            <EditText
+                android:id="@+id/edTUsuario"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginHorizontal="32dp"
+                android:background="#0073A5"
+                android:paddingHorizontal="12dp"
+                android:inputType="text"
+                android:textColor="#FFFFFF"
+                app:layout_constraintWidth_max="500dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvUsuario" />
+
+            <TextView
+                android:id="@+id/tvContra"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/pixel"
+                android:text="Contraseña"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="@+id/edTContra"
+                app:layout_constraintStart_toStartOf="@+id/edTContra"
+                app:layout_constraintTop_toBottomOf="@+id/edTUsuario" />
+
+            <EditText
+                android:id="@+id/edTContra"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginHorizontal="32dp"
+                android:background="#0073A5"
+                android:paddingHorizontal="12dp"
+                android:inputType="textPassword"
+                android:textColor="#FFFFFF"
+                app:layout_constraintWidth_max="500dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvContra" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/pixel"
+                android:text="Correo Electrónico"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="@+id/edtCorreo"
+                app:layout_constraintStart_toStartOf="@+id/edtCorreo"
+                app:layout_constraintTop_toBottomOf="@+id/edTContra" />
+
+            <EditText
+                android:id="@+id/edtCorreo"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginHorizontal="32dp"
+                android:background="#0073A5"
+                android:paddingHorizontal="12dp"
+                android:inputType="textEmailAddress"
+                android:textColor="#FFFFFF"
+                app:layout_constraintWidth_max="500dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <Button
+                android:id="@+id/btnAcceso"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_marginHorizontal="32dp"
+                android:background="@drawable/boton"
+                android:fontFamily="@font/pixel"
+                android:paddingVertical="12dp"
+                android:text="Iniciar Sesión"
+                android:textSize="24sp"
+                app:backgroundTint="@null"
+                app:layout_constraintWidth_max="400dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtCorreo" />
+
+            <TextView
+                android:id="@+id/txtpreg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/pixel"
+                android:text="¿No tienes una cuenta?"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnAcceso" />
+
+            <Button
+                android:id="@+id/btnreg"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginHorizontal="32dp"
+                android:background="@drawable/boton"
+                android:fontFamily="@font/pixel"
+                android:paddingVertical="12dp"
+                android:text="Registrarme"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                app:backgroundTint="@null"
+                app:layout_constraintWidth_max="400dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtpreg" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
