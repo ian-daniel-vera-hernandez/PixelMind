@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/menuOverlay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondomen"
+    tools:visibility="visible">
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/menuOverlayBackground"
+        android:orientation="vertical"
+        android:paddingBottom="16dp"
+        android:elevation="16dp">
+
+        <LinearLayout
+            android:id="@+id/menuTitleContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#460363"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/menuBrandTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/pixel"
+                android:text="PixelMind"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/menuBrandIcon"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:contentDescription="Logo PixelMind"
+                android:src="@drawable/regresarconella" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/newConversationButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="@color/menuOverlayBackground"
+            android:fontFamily="@font/pixel"
+            android:padding="12dp"
+            android:text="Nueva Conversación"
+            android:textAlignment="viewStart"
+            android:textColor="@color/white"
+            app:icon="@drawable/mensaje"
+            app:iconGravity="textStart"
+            app:iconPadding="12dp"
+            app:iconSize="24dp"
+            app:iconTint="@color/neonArrow"
+            app:rippleColor="@color/menuButtonRipple" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/menuRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:overScrollMode="never"
+            android:paddingHorizontal="8dp"
+            tools:itemCount="5"
+            tools:listitem="@layout/menu_item"
+            tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+        <Button
+            android:id="@+id/logoutButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/menuOverlayBackground"
+            android:fontFamily="@font/pixel"
+            android:padding="12dp"
+            android:text="Cerrar Sesión"
+            android:textAlignment="viewStart"
+            android:textColor="@color/white"
+            app:icon="@drawable/salir"
+            app:iconGravity="textStart"
+            app:iconPadding="12dp"
+            app:iconSize="24dp"
+            app:iconTint="@color/neonArrow"
+            app:rippleColor="@color/menuButtonRipple" />
+
+    </LinearLayout>
+</FrameLayout>
